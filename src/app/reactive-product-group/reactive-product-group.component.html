@@ -1,0 +1,61 @@
+<div class="modal-body body-height">
+  <h1 class="modal-title">Pet Foods Save and More</h1>
+  <div class="row">
+    <div class="left-panel base-padding-top">
+      <div class="filter grid">
+        <div class="">
+          <h3>Filter By Product Type</h3>
+          <div>
+            <div
+              class="filter-wrapper"
+            >
+              <div
+                class="checkbox"
+                *ngFor="let element of (productTypeFilters$ | async)"
+              >
+                <label>
+                  <input
+                    type="checkbox"
+                    (click)="changeFilterSelection(element)"
+                    [checked]="element.isSelected"
+                  />
+                  <span class="half-padding-left">{{
+                    element.value
+                  }}</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right-panel base-padding-top">
+      <div
+        class="container qtr-margin-top no-padding border-top"
+      >
+        <table>
+          <tr>
+            <th>
+              Name
+            </th>
+            <th>
+              Product Type
+            </th>
+            <th>
+              Country of Origin
+            </th>
+            <th>
+              Price
+            </th>
+          </tr>
+          <tr *ngFor="let product of (products$ | async)">
+            <td>{{ product.name }}</td>
+            <td>{{ product.productType }}</td>
+            <td>{{ product.origin }}</td>
+            <td>{{ product.price | currency }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

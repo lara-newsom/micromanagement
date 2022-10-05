@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+table {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  //margin: auto;
+  border: solid 2px black;
+  background-color: lightcyan;
+  tr {
+    padding: 20px;
+    margin: 0;
+    th {
+      text-align: center;
+      font-size: 1.2rem;
+      padding: 20px;
+      margin: 0;
+      cursor: pointer;
+    }
+    td {
+      text-align: center;
+      font-size: 1rem;
+      padding: 20px;
+      border: solid 1px grey;
+      margin: 0;
+    }
+    &:first-of-type {
+      background-color: lightseagreen;
+    }
+  }
+}
+
+.total-cats, .loading {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: auto;
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 2rem;
+
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

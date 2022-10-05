@@ -1,0 +1,89 @@
+.modal-body {
+  margin: auto;
+}
+
+.filter-wrapper {
+  height: auto;
+}
+
+.row{
+  display: flex;
+}
+
+.filter {
+  border: solid 1px black;
+  padding: 10px;
+  margin: 20px;
+  height: auto;
+}
+
+.base-margin-top {
+  margin-top: 20px;
+}
+
+h3, .h3 {
+  color: blue;
+  font-size: large;
+}
+.left-panel {
+	width: 15%;
+}
+.right-panel {
+	width: 85%;
+}
+
+table {
+  margin-top: 20px;
+  margin: 20px;
+}
+
+td {
+  font-size: 1.2rem;
+  &:first-of-type {
+    width: 250px;
+  }
+}
+
+.checkbox{
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.group-data {
+  display: flex;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.group-info {
+  font-size: large;
+  margin-top: 10px;
+}
+
+.modal-title {
+  font-size: 3rem;
+  text-align: left;
+  margin-left: 20px;
+  padding-top: 60px;
+}
+h2{
+  text-align: left;
+  font-size: 2rem;
+  color: blue;
+}
+
+.products {
+  font-size: 1.5rem;
+  color:darkslategray;
+}
+
+.half-padding-left {
+  font-size: 1rem;
+  padding: 10px;
+  margin: 10px;
+}
